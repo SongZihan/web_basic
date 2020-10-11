@@ -6,6 +6,9 @@ app = Flask(__name__)
 def hello_world():
     return render_template('Frontend_basic.html')
 
+@app.route('/another_page',methods=["GET"])
+def another():
+    return render_template('another_page.html')
 
 
 if __name__ == "__main__":
