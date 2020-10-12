@@ -10,6 +10,10 @@ def hello_world():
 def another():
     return render_template('another_page.html')
 
+@app.route('/use_bootstrap',methods=["GET"])
+def use_bootstrap():
+    return render_template('use_bootstrap.html')
+
 
 if __name__ == "__main__":
     app.run(host="localhost")
